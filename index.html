@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Restaurant</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- Tautan Stylesheet Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+  <!-- =======================================================
+  * Template Name: Delicious
+  * Updated: May 30 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center fixed-top topbar-transparent">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
+      <i class="bi bi-phone d-flex align-items-center"><span>08221585</span></i>
+      <i class="bi bi-clock ms-4 d-none d-lg-flex align-items-center"><span>Mon-Sat: 11:00 AM - 23:00 PM</span></i>
+      <i id="loggedInUser" style="margin-left: 16px;"></i>
+    </div>
+  </section>
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <div class="logo me-auto">
+        <p></p>
+        <a href="index.html"><img src="assets/img/delicius.png" alt="Delicious Logo" class="img-fluid logo-image"
+            id="logo"></a>
+        <h1><a href="index.html">Delicious</a></h1>
+        <p id="loggedInUser"></p>
+      </div>
+
+
+
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
+          <li><a class="nav-link scrollto" href="#specials">Specials</a></li>
+          <li><a class="nav-link scrollto" href="#chefs">Chefs</a></li>
+          <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="#book-a-table">Book a table</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="login.html" class="book-a-table-btn scrollto"><i class="fas fa-sign-out-alt"></i> Logout</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url(assets/img/slide/baru1.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown"><span>Delicious</span> Restaurant</h2>
+                <p class="animate__animated animate__fadeInUp">Delicious Restaurant adalah restoran ternama di
+                  Yogyakarta, Terletak di Kasihan, Bantul jl.tegal arum no 69</p>
+                <div>
+                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
+                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url(assets/img/slide/baru2.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown"><span>Delicious</span> Restaurant</h2>
+                <p class="animate__animated animate__fadeInUp">Restoran kami menyediakan makanan dan minuman yang sehat
+                  dan bergizi dengan harga yang sangat terjangkau.</p>
+                <div>
+                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
+                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background-image: url(assets/img/slide/aww\ urang.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown"><span>Delicious</span> Restaurant</h2>
+                <p class="animate__animated animate__fadeInUp">Restoran Delicious sudah berdiri sejak tahun 2019 yang
+                  didirikan oleh Chef Adi & Chef Susy.</p>
+                <div>
+                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
+                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container-fluid">
+
+        <div class="row">
+
+          <div class="col-lg-5 align-items-stretch video-box"
+            style='background-image: url("assets/img/buatvidio.png");'>
+            <a href="https://youtu.be/xlCldiOzT5o" class="venobox play-btn mb-4" data-vbtype="video"
+              data-autoplay="true"></a>
+          </div>
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+
+            <div class="content">
+              <h3>Mengenai Restaurant Kami.</h3>
+              <p>
+                Selamat datang di Delicious Restaurant, di mana keunggulan kuliner berpadu dengan pengalaman bersantap
+                yang
+                luar biasa. Terletak di kota yang ramai, restoran kami telah mendapatkan reputasi sebagai surga
+                gastronomi, memikat selera penggemar makanan dari semua lapisan masyarakat.
+              </p>
+              <p class="fst-italic">
+                Di Delicious Restaurant, kami percaya bahwa bersantap bukan hanya tentang memuaskan rasa lapar, tetapi
+                juga menciptakan momen yang tak terlupakan. Misi kami adalah untuk memberikan perjalanan kuliner yang
+                luar biasa yang menggoda indra Anda dan membuat Anda menginginkan lebih. Apakah Anda seorang penikmat
+                makanan yang cerdas atau seseorang yang mencari pengalaman bersantap yang tak terlupakan, kami bertujuan
+                untuk melebihi harapan Anda.
+              </p>
+              <ul>
+                <li><i class="bx bx-check-double"></i>Delicious Restaurant terkenal dengan
+                  keunggulan kulinernya. Tim koki terkenal kami menggabungkan kreativitas, keterampilan, dan hasrat
+                  untuk membuat hidangan luar biasa yang memuaskan selera. Kami memprioritaskan penggunaan bahan-bahan
+                  lokal berkualitas tinggi untuk memastikan setiap gigitan memiliki rasa dan kesegaran.</li>
+                <li><i class="bx bx-check-double"></i> Restoran kami menawarkan beragam menu yang melayani berbagai
+                  preferensi diet dan preferensi kuliner. Dari daging lezat dan makanan laut segar hingga pilihan
+                  vegetarian dan vegan yang semarak, selalu ada sesuatu yang sesuai dengan setiap selera. Kami terus
+                  berinovasi dan memperbarui menu kami untuk memperkenalkan rasa baru dan menarik, memastikan bahwa
+                  setiap kunjungan ke Restoran Lezat adalah pengalaman yang unik.</li>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Menu Section ======= -->
+    <section id="menu" class="menu">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Menu Special <span>Kami</span></h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="menu-flters">
+              <li data-filter="*" class="filter-active">Semua Menu</li>
+              <li data-filter=".filter-starters">Makanan</li>
+              <li data-filter=".filter-salads">Minuman</li>
+              <li data-filter=".filter-specialty">Gorengan</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row menu-container">
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <div class="menu-content">
+              <a href="#">Oseng Ayam</a><span>Rp. 12.000</span>
+            </div>
+            <div class="menu-ingredients">
+              Ayam, Nasi, Sayur, Orek Tempe, Bihun
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <div class="menu-content">
+              <a href="#">Bakwan</a><span>Rp. 1000</span>
+            </div>
+            <div class="menu-ingredients">
+              Tepung, Penyedap Rasa, Sayur
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <div class="menu-content">
+              <a href="#">Oseng Ati</a><span>Rp. 12.000</span>
+            </div>
+            <div class="menu-ingredients">
+              Ati, Nasi, Sayur, Orek Tempe, Bihun
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-salads">
+            <div class="menu-content">
+              <a href="#">Nutrisari</a><span>Rp. 3000</span>
+            </div>
+            <div class="menu-ingredients">
+              Minuman segar dengan berbagai rasa buah - buahan
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <div class="menu-content">
+              <a href="#">Tempe Mendoan</a><span>Rp. 1000</span>
+            </div>
+            <div class="menu-ingredients">
+              Tempe, Tepung, Penyedap Rasa
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <div class="menu-content">
+              <a href="#">Omelet</a><span>Rp. 14.000</span>
+            </div>
+            <div class="menu-ingredients">
+              Mie, Telur, Nasi, Sayur
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-salads">
+            <div class="menu-content">
+              <a href="#">Extrajoss Susu</a><span>Rp. 6000</span>
+            </div>
+            <div class="menu-ingredients">
+              Minuman penambah energi yang sangat segar dan dicampur susu
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-salads">
+            <div class="menu-content">
+              <a href="#">Kopi</a><span>Rp. 5000</span>
+            </div>
+            <div class="menu-ingredients">
+              Minuman penghilang rasa ngantuk
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <div class="menu-content">
+              <a href="#">Kerupuk</a><span>Rp. 1000</span>
+            </div>
+            <div class="menu-ingredients">
+              Makanan untuk sampingan makanan berat
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Menu Section -->
+
+    <!-- ======= Specials Section ======= -->
+    <section id="specials" class="specials">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Cek Menu <span>Specials</span></h2>
+          <p>Restaurant kami menyediakan menu yang special. Dimana menu ini banyak sekali peminatnya.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Oseng Ayam</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Oseng Ati</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Omelet</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Oseng Ayam</h3>
+                    <p class="fst-italic">Oseng Ayam adalah salah satu hidangan khas Indonesia yang terbuat dari
+                      potongan daging ayam yang digoreng atau ditumis dengan berbagai bumbu dan rempah-rempah. Hidangan
+                      ini biasanya memiliki rasa pedas, gurih, dan sedikit manis.</p>
+                    <p>Oseng Ayam merupakan hidangan yang sederhana namun lezat. Dalam proses memasaknya, Anda dapat
+                      menyesuaikan tingkat kepedasan dan kelezatan sesuai dengan selera masing-masing.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/ayam gani.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Oseng Ati</h3>
+                    <p class="fst-italic">Oseng Ati Ayam adalah hidangan Indonesia yang terbuat dari ati ayam, atau hati
+                      ayam, yang dimasak dengan bumbu dan rempah-rempah yang kaya akan rasa dan aroma. Ati ayam memiliki
+                      tekstur yang lembut dan memiliki cita rasa khas.</p>
+                    <p>Oseng Ati Ayam adalah hidangan yang lezat dan bergizi. Hidangan ini cocok disantap sebagai
+                      hidangan utama atau bisa juga menjadi salah satu hidangan dalam acara makan sehari-hari. Hati ayam
+                      yang lembut dan bumbu rempah yang kaya memberikan rasa yang enak dan memuaskan bagi pecinta
+                      masakan Indonesia.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/ati gani.PNG" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Omelet</h3>
+                    <p class="fst-italic">Oseng Ati Ayam adalah hidangan Indonesia yang terbuat dari ati ayam, atau hati
+                      ayam, yang dimasak dengan bumbu dan rempah-rempah yang kaya akan rasa dan aroma. Ati ayam memiliki
+                      tekstur yang lembut dan memiliki cita rasa khas.</p>
+                    <p>Oseng Ati Ayam adalah hidangan yang lezat dan bergizi. Hidangan ini cocok disantap sebagai
+                      hidangan utama atau bisa juga menjadi salah satu hidangan dalam acara makan sehari-hari. Hati ayam
+                      yang lembut dan bumbu rempah yang kaya memberikan rasa yang enak dan memuaskan bagi pecinta
+                      masakan Indonesia.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/omelet gani.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+    </section><!-- End Specials Section -->
+
+
+    <!-- ======= Book A Table Section ======= -->
+    <section id="book-a-table" class="book-a-table">
+      <div class="container">
+        <div class="section-title">
+          <h2>Reservasi <span>Table</span></h2>
+          <p>Jika anda ingin reservasi restoran kami maka silahkan mengisi form dibawah ini</p>
+        </div>
+
+        <form id="reservationForm" method="post" role="form" class="form">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
+                data-msg="Please enter at least 4 characters">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                data-rule="email" data-msg="Please enter a valid email">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone"
+                data-rule="minlen:4" data-msg="Please enter at least 4 characters">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4"
+                data-msg="Please enter at least 4 characters">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4"
+                data-msg="Please enter at least 4 characters">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="number" class="form-control" name="people" id="people" placeholder="# of people"
+                data-rule="min:1" data-msg="Please enter at least 1 character">
+              <div class="validate"></div>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+            <div class="validate"></div>
+          </div>
+          <div class="mb-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your
+              reservation. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Send Message</button></div>
+        </form>
+      </div>
+    </section>
+    <!-- End Book A Table Section -->
+
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+      <div class="container-fluid">
+
+        <div class="section-title">
+          <h2>Contoh Foto <span> Restaurant Kami</span></h2>
+          <p>Inilah beberapa foto - foto dari Restaurant kami</p>
+        </div>
+
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/galery1.jpg" class="gallery-lightbox">
+                <img src="assets/img/gallery/galery1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/galery2.jpg" class="gallery-lightbox">
+                <img src="assets/img/gallery/galery2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/galery3.jpg" class="gallery-lightbox">
+                <img src="assets/img/gallery/galery3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/galery4.jpg" class="gallery-lightbox">
+                <img src="assets/img/gallery/galery4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/galery5.jpg" class="gallery-lightbox">
+                <img src="assets/img/gallery/galery5.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/galery6.jpg" class="gallery-lightbox">
+                <img src="assets/img/gallery/galery6.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/galery7.jpg" class="gallery-lightbox">
+                <img src="assets/img/gallery/galery7.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/galery8.jpg" class="gallery-lightbox">
+                <img src="assets/img/gallery/galery8.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
+    <!-- ======= Chefs Section ======= -->
+    <section id="chefs" class="chefs">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Our Proffesional <span>Chefs</span></h2>
+          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae
+            autem.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="assets/img/chefs/nadiv.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Nadiv Nugraha</h4>
+                <span>Master Chef</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="assets/img/chefs/alwan.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Alwan Fauzi</h4>
+                <span>Patissier</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="assets/img/chefs/gany.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Ghani Zumar </h4>
+                <span>Cook</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <section>
+          <div class="row">
+
+            <div class="col-lg-4 col-md-6">
+              <div class="member">
+                <div class="pic"><img src="assets/img/chefs/fadil.jpg" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Muhammad Fadila</h4>
+                  <span>Master Chef</span>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="member">
+                <div class="pic"><img src="assets/img/chefs/wb.jpg" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Wilbert Tegar</h4>
+                  <span>Patissier</span>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="member">
+                <div class="pic"><img src="assets/img/chefs/indra.jpg" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Nalendra Satria</h4>
+                  <span>Cook</span>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+    </section><!-- End Chefs Section -->
+
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div id="notification"></div>
+      <div class="container">
+        <div class="section-title">
+          <h2><span>Contact</span> Us</h2>
+          <p>Silahkan hubungi kami disini jika ada saran dan kritikan kepada kami </p>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <div class="info-wrap">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 info">
+              <i class="bi bi-geo-alt"></i>
+              <h4>Location:</h4>
+              <p>Jl.Tegal Arum<br>Yogyakarta, Seleman, 69</p>
+            </div>
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="bi bi-clock"></i>
+              <h4>Open Hours:</h4>
+              <p>Monday-Saturday:<br>11:00 AM - 2300 PM</p>
+            </div>
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="bi bi-envelope"></i>
+              <h4>Email:</h4>
+              <p>tetepdemen@gmail.com<br>tetepdemen@gmail.com</p>
+            </div>
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="bi bi-phone"></i>
+              <h4>Call:</h4>
+              <p>+62 891 234 56<br>+62 89 123 456</p>
+            </div>
+          </div>
+        </div>
+
+        <form id="contactForm" class="form">
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Send Message</button></div>
+        </form>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Delicious</h3>
+      <p>Melayani Makanan yang enak, lezat, nikmat dan layak.</p>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Delicious</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/ -->
+        Designed by <a href="https://bootstrapmade.com/">Kelompok5</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/reservation.js"></script>
+  <script src="assets/js/contact.js"></script>
+
+</body>
+
+</html>
