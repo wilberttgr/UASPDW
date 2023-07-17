@@ -123,7 +123,7 @@ a.brand-logo {
 
 .btn {
     align-items: center;
-    background: #ffc064;
+    background: red;
     border-radius: 6px;
     border: 0;
     color: #fff;
@@ -136,7 +136,7 @@ a.brand-logo {
 }
 
 .btn:hover {
-    background: #ffc064;
+    background: red;
     transform: translateY(-2px);
 }
 
@@ -160,7 +160,7 @@ a.brand-logo {
 
 .fas,
 .login .fas {
-    color: #ffc064;
+    color: red;
     font-size: 30px;
     margin-bottom: 5px;
 }
@@ -230,7 +230,7 @@ span,
 
 .form .form-row.bottom .forgot,
 .login .form .form-row.bottom .forgot {
-    color: #ffc064;
+    color: red;
     font-size: 18px;
     opacity: .7;
 }
@@ -287,8 +287,8 @@ span,
 
 .form .form-row .form-check input[type="checkbox"]:checked+label:before,
 .login .form .form-row .form-check input[type="checkbox"]:checked+label:before {
-    background-color: #ffc064;
-    border-color: #ffc064;
+    background-color: red;
+    border-color: red;
     color: #fff;
 }
 
@@ -390,7 +390,7 @@ span,
 }
 
 .btn-brown {
-    background-color: #ffc064;
+    background-color: red;
     color: white;
 }
 
