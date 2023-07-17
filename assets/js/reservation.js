@@ -44,5 +44,5 @@ function showSuccessMessage() {
     var successMessage = document.querySelector('.sent-message');
     successMessage.style.display = 'block';
     successMessage.style.color = 'white';
-    successMessage.style.backgroundColor = '#ffb03b'; // Set the background color to #ffb03b
+    successMessage.style.backgroundColor = 'red'; // Set the background color to #ffb03b
 }
